@@ -100,6 +100,7 @@
         ["Đi lại nhẹ trong ngày","—","Tùy sức","—","Máy chạy do bạn tự sắp xếp."],["Giãn cơ nhẹ","1","5–10 phút","—","Không kéo căng tới mức đau."],["Ngủ và dinh dưỡng","—","7–9 giờ ngủ","—","Ưu tiên protein và đủ năng lượng."]]}
     ];
     const guideData={
+      inclinepress:{steps:["Chỉnh lưng ghế nghiêng nhẹ khoảng 25–35°; bắt đầu ở nấc thấp để ưu tiên ngực trên thay vì vai.","Đặt ghế trong khung sao cho khi nằm, thanh ở phía trước mặt và khi hạ sẽ tới vùng ngực trên, không phải cổ hay giữa ngực.","Đặt hai chốt an toàn cùng độ cao ngay dưới điểm thấp nhất. Ép bả vai xuống ghế, mở thanh, hạ có kiểm soát rồi đẩy lên theo đường cố định và gài thanh lại chắc chắn."],mistakes:["Dùng ghế phẳng như bài đẩy ngực giữa.","Dựng ghế quá cao khiến bài tập gần thành đẩy vai.","Đặt ghế sai vị trí làm thanh hạ về cổ hoặc quá thấp; xòe khuỷu ngang 90°."],cue:"Thanh luôn ở trước mặt/ngực trên; khuỷu chếch khoảng 45–60°. Hít khi hạ · thở khi đẩy.",warning:"Thử trước bằng đòn không tạ; kiểm tra hai chốt an toàn cùng độ cao và điểm gài thanh trước mỗi hiệp."},
       chest:{steps:["Chỉnh ghế đúng góc; đặt chốt an toàn ngay dưới điểm thấp nhất của đòn.","Nằm chắc, hai chân bám sàn; kéo bả vai xuống và khép vào nhau.","Nắm đòn rộng hơn vai, hạ có kiểm soát với khuỷu chếch 45–60°, sau đó đẩy lên."],mistakes:["Nhấc mông khỏi ghế.","Xòe khuỷu ngang 90° hoặc nhún vai.","Để đòn nảy trên ngực."],cue:"Hít vào khi hạ · thở ra khi đẩy. Cổ tay luôn nằm thẳng trên khuỷu.",warning:"Không tập nặng một mình khi chưa đặt chốt an toàn đúng độ cao."},
       fly:{steps:["Chỉnh tay cầm ngang giữa ngực, lưng áp đệm.","Giữ khuỷu hơi cong và cố định góc này.","Khép hai tay bằng cơ ngực, dừng một nhịp rồi mở chậm."],mistakes:["Khóa thẳng khuỷu.","Dùng đà hoặc để tạ va mạnh.","Đưa vai ra trước ở cuối động tác."],cue:"Tưởng tượng ôm một thân cây; thở ra khi khép tay.",warning:"Không mở tay quá sâu nếu vai bị căng hoặc đau."},
       triceps:{steps:["Đứng vững cạnh ròng rọc, siết bụng.","Giữ khuỷu cố định sát thân hoặc cạnh đầu tùy bài.","Chỉ duỗi cẳng tay, sau đó trở về chậm."],mistakes:["Đưa cả khuỷu ra trước–sau.","Ưỡn lưng hoặc dùng trọng lượng cơ thể.","Gập cổ tay."],cue:"Thở ra khi duỗi tay; vai giữ thấp và ổn định.",warning:"Giảm tạ nếu khuỷu hoặc vai phải lắc để hoàn thành."},
@@ -116,6 +117,7 @@
       basic:{steps:["Chỉnh máy và khóa chốt chắc chắn; chọn mức tạ rất nhẹ.","Giữ thân ổn định, thực hiện chậm trong biên độ không đau.","Trả tạ có kiểm soát, không để các bánh tạ va mạnh."],mistakes:["Dùng đà để nâng.","Nín thở.","Cố tập tiếp khi kỹ thuật đã biến dạng."],cue:"Thở ra ở pha dùng sức, hít vào ở pha trở về.",warning:"Nếu chưa chắc cách lắp tay cầm hoặc chỉnh ghế, xem hướng dẫn chính hãng trước."}
     };
     const visualData={
+      inclinepress:{tech:"https://fitliferegime.com/wp-content/uploads/2023/09/Smith-Machine-Incline-Press.gif",muscle:"https://fitliferegime.com/wp-content/uploads/2023/09/Smith-Machine-Bench-Press-Muscles-Worked.jpg",source:"https://fitliferegime.com/smith-machine-bench-press/"},
       chest:{tech:"https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/09/bench-press.gif?resize=600%2C600&ssl=1",muscle:"https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/06/Muscles-worked-in-the-bench-press-exercise-2.jpg?resize=563%2C563&ssl=1",source:"https://www.strengthlog.com/bench-press/"},
       triceps:{tech:"https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/triceps-pushdown-with-straight-handle.gif?resize=600%2C600&ssl=1",muscle:"https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/05/muscles-worked-in-tricep-pushdown-2.png?resize=700%2C700&ssl=1",source:"https://www.strengthlog.com/tricep-pushdown-with-bar/"},
       pulldown:{tech:"https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/lat-pulldown-with-pronated-grip.gif?resize=600%2C600&ssl=1",muscle:"https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/Muscles-worked-by-lat-pulldown-with-pronated-grip.png?resize=700%2C700&ssl=1",source:"https://www.strengthlog.com/lat-pulldown-with-pronated-grip/"},
@@ -130,6 +132,7 @@
     function guideFor(name){
       const n=name.toLowerCase();
       if(n.includes("đẩy vai"))return guideData.smithpress;
+      if(n.includes("đẩy ngực trên"))return guideData.inclinepress;
       if(n.includes("đẩy ngực"))return guideData.chest;
       if(n.includes("ép ngực"))return guideData.fly;
       if(n.includes("tay sau")||n.includes("duỗi tay"))return guideData.triceps;
@@ -147,6 +150,7 @@
     function visualFor(name){
       const n=name.toLowerCase();
       if(n.includes("đẩy vai"))return visualData.press;
+      if(n.includes("đẩy ngực trên"))return visualData.inclinepress;
       if(n.includes("đẩy ngực")||n.includes("ép ngực")||n.includes("chống đẩy"))return visualData.chest;
       if(n.includes("tay sau")||n.includes("duỗi tay"))return visualData.triceps;
       if(n.includes("xô")||n.includes("xà đơn")||n.includes("về mặt"))return visualData.pulldown;
