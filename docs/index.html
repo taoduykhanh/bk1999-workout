@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Lịch tập 6+1 cho giàn tạ BK-1999 Pro">
+  <title>Lịch tập BK-1999 Pro · 6 + 1</title>
+  <style>
+    :root{--ink:#151714;--paper:#f2efe8;--cream:#fbfaf6;--acid:#d8ff4f;--muted:#696b65;--line:#15171429}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    button{font:inherit}.hero{min-height:610px;padding:0 clamp(22px,6vw,90px) 70px;color:var(--cream);background:linear-gradient(90deg,#ffffff09 1px,transparent 1px) 0 0/80px 80px,linear-gradient(#ffffff09 1px,transparent 1px) 0 0/80px 80px,var(--ink)}
+    nav{height:84px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff2e}.brand{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:800;letter-spacing:.15em}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--acid);color:var(--ink)}
+    .meta{color:#afb1aa;font-size:12px;letter-spacing:.1em}.hero-copy{max-width:1240px;margin:96px auto 0}.eyebrow{margin:0 0 25px;color:var(--acid);font-size:11px;font-weight:800;letter-spacing:.2em}
+    h1{margin:0;font-size:clamp(52px,8vw,118px);line-height:.88;letter-spacing:-.065em}h1 em{color:var(--acid);font-family:Georgia,serif;font-weight:400}.lead{max-width:660px;margin:56px 0 0;color:#c5c7c0;font-size:16px;line-height:1.65}
+    main{max-width:1380px;margin:auto;padding:94px clamp(16px,4vw,62px)}.heading{display:grid;grid-template-columns:1fr 390px;align-items:end;gap:35px;margin-bottom:42px}.dark{color:#62645e}.heading h2,.gear h2{margin:0;font-size:clamp(38px,5vw,66px);line-height:.96;letter-spacing:-.055em}.heading>p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+    .tabs{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid var(--line);border-radius:15px 15px 0 0;overflow:hidden}.tabs button{border:0;border-right:1px solid var(--line);padding:18px 12px;background:#ffffff55;text-align:left;cursor:pointer;color:var(--muted)}.tabs button:last-child{border:0}.tabs b{display:block;color:var(--ink);font-size:17px;margin-bottom:6px}.tabs span{font-size:10px;text-transform:uppercase;letter-spacing:.08em}.tabs .on{background:var(--ink);color:#bbbdb6}.tabs .on b{color:var(--acid)}
+    .card{overflow:hidden;border:1px solid var(--line);border-top:0;border-radius:0 0 18px 18px;background:var(--cream)}.card-head{min-height:175px;padding:34px 40px;display:flex;align-items:flex-end;justify-content:space-between;background:#ff795e}.card-head.blue{background:#7faaff}.card-head.lime{background:var(--acid)}.card-head.violet{background:#b69aff}.card-head.sand{background:#d7cdb7}.card-head small{font-weight:800;letter-spacing:.14em;text-transform:uppercase}.card-head h3{margin:10px 0 0;font-size:clamp(36px,5vw,68px);line-height:.9;letter-spacing:-.055em}.time{text-align:right}.time b{display:block;margin-top:8px}
+    .progress{display:flex;align-items:center;gap:18px;padding:18px 40px;border-bottom:1px solid var(--line);font-size:11px;font-weight:800;text-transform:uppercase}.track{height:5px;flex:1;background:#dddcd6;border-radius:5px;overflow:hidden}.track i{display:block;height:100%;background:var(--ink);transition:.25s}
+    .row{position:relative;display:grid;grid-template-columns:minmax(280px,1fr) 70px 100px 70px;align-items:center;padding:18px 40px 18px 82px;border-bottom:1px solid var(--line);cursor:pointer}.row:hover{background:#f2f0ea}.row input{position:absolute;opacity:0}.check{position:absolute;left:40px;width:23px;height:23px;border:1px solid #999;border-radius:50%;display:grid;place-items:center;color:transparent}.done .check{background:var(--ink);color:var(--acid)}.done strong{text-decoration:line-through;color:#888}.name{display:flex;flex-direction:column;gap:5px;padding-right:25px}.name small{color:var(--muted);line-height:1.35}.name i{width:max-content;border-radius:20px;background:#e4e1da;padding:4px 8px;font-size:10px;font-style:normal;font-weight:700}.row>b{font-size:14px}
+    .rules{display:grid;grid-template-columns:repeat(3,1fr);margin-top:90px;border-block:1px solid var(--line)}.rules article{padding:34px;border-right:1px solid var(--line)}.rules article:last-child{border:0}.rules span{font:italic 43px Georgia;color:#59673a}.rules h3{margin:24px 0 10px}.rules p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
+    .gear{margin-top:90px;padding:70px clamp(22px,5vw,70px);border-radius:22px;background:var(--ink);color:var(--cream)}.gear>p{max-width:650px;color:#b8bab3;line-height:1.65}.gear-list{margin-top:40px;border-top:1px solid #ffffff33}.gear-row{display:grid;grid-template-columns:55px 1fr auto;gap:22px;align-items:center;padding:25px 0;border-bottom:1px solid #ffffff33}.gear-row>span{color:var(--acid);font:italic 22px Georgia}.gear-row h3{margin:0 0 7px}.gear-row p{margin:0;color:#a5a79f;font-size:13px}.gear-row>b{border:1px solid #d8ff4f88;border-radius:20px;padding:8px 12px;color:var(--acid);font-size:10px;text-transform:uppercase;letter-spacing:.1em}.buy{margin-top:35px;padding:22px 25px;border-radius:10px;background:var(--acid);color:var(--ink);font-weight:800}
+    footer{padding:28px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:.1em}footer button{margin-left:20px;border:0;background:none;text-decoration:underline;cursor:pointer}
+    @media(max-width:760px){.hero{min-height:560px}.meta{display:none}.hero-copy{margin-top:70px}.heading{grid-template-columns:1fr}.tabs{overflow:auto;grid-template-columns:repeat(7,minmax(88px,1fr))}main{padding-top:65px}.card-head{padding:28px 20px;align-items:flex-start;flex-direction:column;gap:28px}.time{text-align:left}.progress{padding:16px 20px}.row{grid-template-columns:1fr 48px 70px;padding:17px 16px 17px 55px}.row>b:last-child{display:none}.check{left:18px}.rules{grid-template-columns:1fr}.rules article{border-right:0;border-bottom:1px solid var(--line);padding:28px 0}.gear{margin-inline:-5px}.gear-row{grid-template-columns:38px 1fr}.gear-row>b{grid-column:2;width:max-content}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav><div class="brand"><span class="mark">BK</span> HOME GYM</div><div class="meta">6 BUỔI TẬP · 1 NGÀY NGHỈ</div></nav>
+    <section class="hero-copy">
+      <p class="eyebrow">LỊCH TẬP CÁ NHÂN · BK-1999 PRO</p>
+      <h1>Tập có chiến lược.<br><em>Phục hồi có chủ đích.</em></h1>
+      <p class="lead">Lịch Push · Pull · Legs đã điều chỉnh cho giàn tạ tại nhà: ngực và lưng hai lần mỗi tuần, vai sau đi cùng ngày kéo, Chủ nhật hồi phục.</p>
+    </section>
+  </header>
+  <main>
+    <section class="heading">
+      <div><p class="eyebrow dark">TUẦN TẬP CỦA BẠN</p><h2>Chọn ngày. Bắt đầu tập.</h2></div>
+      <p>Khởi động 5–8 phút trước mỗi buổi. Các hiệp khởi động không tính vào số hiệp bên dưới.</p>
+    </section>
+    <div id="tabs" class="tabs"></div>
+    <section class="card">
+      <div id="cardHead" class="card-head"><div><small id="focus"></small><h3 id="title"></h3></div><div class="time"><small>THỜI LƯỢNG</small><b id="duration"></b></div></div>
+      <div class="progress"><div class="track"><i id="bar"></i></div><b id="progressText"></b></div>
+      <div id="exercises"></div>
+    </section>
+    <section class="rules">
+      <article><span>48–72H</span><h3>Khoảng nghỉ mục tiêu</h3><p>Nhóm cơ chính có ít nhất 48 giờ trước lần tập tiếp theo. Lưng nghỉ 72 giờ giữa hai buổi.</p></article>
+      <article><span>RIR 2</span><h3>Dừng đúng lúc</h3><p>Kết thúc phần lớn hiệp khi vẫn có thể làm thêm khoảng 2 lần với kỹ thuật chuẩn.</p></article>
+      <article><span>+1</span><h3>Tăng tiến từ tốn</h3><p>Khi đạt đầu trên khoảng lặp ở mọi hiệp trong hai buổi, tăng mức tạ nhỏ nhất.</p></article>
+    </section>
+    <section class="gear">
+      <p class="eyebrow">DỤNG CỤ BỔ SUNG</p>
+      <h2>BK-1999 Pro làm được phần lớn. Đây là phần còn thiếu.</h2>
+      <p>Một đôi tạ đơn điều chỉnh hoàn thiện chuỗi vận động hông, vai giữa và các bài đơn bên mà giàn cáp khó thay thế.</p>
+      <div class="gear-list">
+        <div class="gear-row"><span>01</span><div><h3>Tạ đơn điều chỉnh</h3><p>Romanian deadlift, nâng vai ngang, cuốn búa và bài đơn bên.</p></div><b>Nên mua</b></div>
+        <div class="gear-row"><span>02</span><div><h3>Dây thừng kéo cáp</h3><p>Face pull và tay sau thoải mái hơn tay cầm thẳng.</p></div><b>Rất hữu ích</b></div>
+        <div class="gear-row"><span>03</span><div><h3>Thảm tập</h3><p>Dùng cho plank, bài bụng và giãn cơ.</p></div><b>Nên có</b></div>
+        <div class="gear-row"><span>04</span><div><h3>Dây kháng lực</h3><p>Khởi động vai, mông và trợ lực xà đơn.</p></div><b>Tùy chọn</b></div>
+      </div>
+      <div class="buy">Nếu chỉ mua một món: tạ đơn điều chỉnh, tổng tải khoảng 20–30 kg.</div>
+    </section>
+  </main>
+  <footer>BK HOME GYM · KẾ HOẠCH 6 + 1 <button id="reset">Đặt lại tiến độ tuần</button></footer>
+  <script>
+    const days=[
+      {k:"mon",s:"T2",t:"Ngực + tay sau",f:"Buổi nặng",c:"",d:"50–60 phút",e:[
+        ["Đẩy ngực giữa","4","6–10","120s","Dừng khi còn dư 2 lần lặp."],["Đẩy ngực trên","3","8–12","90s","Giữ bả vai ép xuống ghế."],["Ép ngực","3","10–15","75s","Khép tay có kiểm soát."],["Kéo cáp tay sau","3","10–15","60s","Giữ khuỷu tay sát thân."],["Duỗi tay sau qua đầu","2","12–15","60s","Dùng cáp thấp, tải vừa."]]},
+      {k:"tue",s:"T3",t:"Lưng/xô + tay trước",f:"Buổi nặng + vai sau",c:"blue",d:"55–65 phút",e:[
+        ["Xà đơn hoặc kéo xô trước","4","6–10","120s","Kéo khuỷu xuống, không giật người."],["Kéo lưng giữa","4","8–12","90s","Dừng một nhịp khi bả vai khép."],["Kéo xô tay hẹp","3","10–12","75s","Giữ ngực cao."],["Kéo cáp về mặt","3","12–15","60s","Vai sau; tải nhẹ.","Dây thừng cáp"],["Cuốn tay trước với cáp","3","10–15","60s","Không đưa khuỷu ra trước."]]},
+      {k:"wed",s:"T4",t:"Chân + mông + đùi",f:"Buổi thân dưới",c:"lime",d:"55–65 phút",e:[
+        ["Squat với đòn","4","6–10","150s","Ưu tiên biên độ an toàn."],["Đá đùi trước","3","10–15","75s","Không khóa gối mạnh."],["Cuốn đùi sau","3","10–15","75s","Nếu bộ phận chân cho phép."],["Romanian deadlift","3","8–12","120s","Giữ lưng trung lập.","Tạ đơn điều chỉnh"],["Nâng bắp chân","4","12–20","60s","Dừng một nhịp ở điểm cao.","Tạ đơn điều chỉnh"]]},
+      {k:"thu",s:"T5",t:"Vai + bụng",f:"Vai giữa, vai trước nhẹ",c:"violet",d:"40–50 phút",e:[
+        ["Đẩy vai","3","8–12","90s","Không tập tới thất bại."],["Nâng vai ngang","4","12–20","60s","Tải nhẹ, không nhún người.","Tạ đơn điều chỉnh"],["Nâng vai ngang một tay với cáp","2","12–15","60s","Có thể thay bài tạ đơn."],["Gập bụng trên ghế","3","12–20","45s","Thở ra khi cuộn thân."],["Plank","3","30–60s","45s","Siết mông, không võng lưng.","Thảm tập"]]},
+      {k:"fri",s:"T6",t:"Lưng/xô + tay trước",f:"Buổi vừa",c:"blue",d:"45–55 phút",e:[
+        ["Kéo xô trước","3","10–15","90s","Nhẹ hơn thứ 3 khoảng 10–15%."],["Kéo lưng giữa","3","10–15","75s","Nhịp chậm, cảm nhận lưng."],["Kéo xô tay hẹp","2","12–15","75s","Không ngả người quá nhiều."],["Cuốn tay trước với cáp","3","12–15","60s","Dừng trước thất bại 2–3 lần."],["Cuốn búa","2","12–15","60s","Bổ sung cẳng tay.","Tạ đơn điều chỉnh"]]},
+      {k:"sat",s:"T7",t:"Ngực + tay sau",f:"Buổi vừa",c:"",d:"45–55 phút",e:[
+        ["Đẩy ngực trên","3","10–15","90s","Không lặp cường độ nặng thứ 2."],["Đẩy ngực giữa","3","10–15","90s","Hạ tạ chậm 2–3 giây."],["Ép ngực","2","12–15","75s","Giữ căng cơ."],["Kéo cáp tay sau","3","12–15","60s","Giữ vai cố định."],["Chống đẩy","2","Gần tối đa","90s","Dừng trước khi sai kỹ thuật."]]},
+      {k:"sun",s:"CN",t:"Nghỉ hoàn toàn",f:"Phục hồi",c:"sand",d:"Không tập tạ",e:[
+        ["Đi lại nhẹ trong ngày","—","Tùy sức","—","Máy chạy do bạn tự sắp xếp."],["Giãn cơ nhẹ","1","5–10 phút","—","Không kéo căng tới mức đau."],["Ngủ và dinh dưỡng","—","7–9 giờ ngủ","—","Ưu tiên protein và đủ năng lượng."]]}
+    ];
+    let active="mon",done={};try{done=JSON.parse(localStorage.getItem("bk-done")||"{}")}catch(e){}
+    const $=id=>document.getElementById(id);
+    function draw(){
+      const day=days.find(x=>x.k===active);
+      $("tabs").innerHTML=days.map(x=>`<button class="${x.k===active?"on":""}" onclick="active='${x.k}';draw()"><b>${x.s}</b><span>${x.t.split(" + ")[0]}</span></button>`).join("");
+      $("cardHead").className=`card-head ${day.c}`;$("focus").textContent=day.f;$("title").textContent=day.t;$("duration").textContent=day.d;
+      const count=day.e.filter((_,i)=>done[day.k+"-"+i]).length;$("bar").style.width=(count/day.e.length*100)+"%";$("progressText").textContent=`${count}/${day.e.length} hoàn thành`;
+      $("exercises").innerHTML=day.e.map((x,i)=>{const id=day.k+"-"+i;return `<label class="row ${done[id]?"done":""}"><input type="checkbox" ${done[id]?"checked":""} onchange="done['${id}']=this.checked;localStorage.setItem('bk-done',JSON.stringify(done));draw()"><span class="check">✓</span><span class="name"><strong>${x[0]}</strong><small>${x[4]}</small>${x[5]?`<i>+ ${x[5]}</i>`:""}</span><b>${x[1]}</b><b>${x[2]}</b><b>${x[3]}</b></label>`}).join("");
+    }
+    $("reset").onclick=()=>{done={};localStorage.removeItem("bk-done");draw()};draw();
+  </script>
+</body>
+</html>
