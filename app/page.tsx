@@ -41,15 +41,16 @@ const days: Day[] = [
     key: "tue",
     short: "T3",
     title: "Lưng/xô + tay trước",
-    focus: "Buổi nặng + vai sau",
+    focus: "Biến thể kéo xô + vai sau",
     tone: "blue",
     duration: "55–65 phút",
     exercises: [
-      { name: "Xà đơn hoặc kéo xô trước", sets: "4", reps: "6–10", rest: "120s", note: "Kéo khuỷu xuống, không giật người." },
-      { name: "Kéo lưng giữa", sets: "4", reps: "8–12", rest: "90s", note: "Dừng một nhịp khi bả vai khép." },
-      { name: "Kéo xô tay hẹp", sets: "3", reps: "10–12", rest: "75s", note: "Giữ ngực cao và thân ổn định." },
+      { name: "Kéo xô rộng tay (hoặc xà đơn)", sets: "4", reps: "6–10", rest: "120s", note: "Nắm rộng hơn vai; kéo khuỷu xuống, không giật người." },
+      { name: "Kéo xô tay hẹp", sets: "3", reps: "8–12", rest: "90s", note: "Tay cầm song song, khuỷu sát thân; căng xô ở điểm trên." },
+      { name: "Kéo xô ngược tay", sets: "3", reps: "10–12", rest: "75s", note: "Lòng bàn tay hướng về mình; siết xô dưới." },
+      { name: "Kéo cáp tay thẳng", sets: "3", reps: "12–15", rest: "60s", note: "Khuỷu cong nhẹ cố định; chỉ dùng cơ xô kéo xuống." },
       { name: "Kéo cáp về mặt", sets: "3", reps: "12–15", rest: "60s", note: "Vai sau; tải nhẹ, khuỷu mở.", gear: "Dây thừng cáp" },
-      { name: "Cuốn tay trước với cáp", sets: "3", reps: "10–15", rest: "60s", note: "Không đưa khuỷu ra trước." },
+      { name: "Cuốn tay trước với cáp", sets: "3", reps: "10–15", rest: "60s", note: "Ngồi ghế, ròng rọc thấp; không đưa khuỷu ra trước.", gear: "Tay đòn ngắn" },
     ],
   },
   {
@@ -61,10 +62,10 @@ const days: Day[] = [
     duration: "55–65 phút",
     exercises: [
       { name: "Squat với đòn", sets: "4", reps: "6–10", rest: "150s", note: "Ưu tiên biên độ an toàn và kiểm soát." },
-      { name: "Đá đùi trước", sets: "3", reps: "10–15", rest: "75s", note: "Không khóa gối mạnh ở điểm cao." },
-      { name: "Cuốn đùi sau", sets: "3", reps: "10–15", rest: "75s", note: "Nếu bộ phận chân của máy cho phép." },
-      { name: "Romanian deadlift", sets: "3", reps: "8–12", rest: "120s", note: "Giữ lưng trung lập; tập kỹ thuật trước.", gear: "Tạ đơn điều chỉnh" },
-      { name: "Nâng bắp chân", sets: "4", reps: "12–20", rest: "60s", note: "Dừng một nhịp ở điểm cao.", gear: "Tạ đơn điều chỉnh" },
+      { name: "Romanian deadlift với đòn", sets: "3", reps: "8–12", rest: "120s", note: "Đòn trong khung; đẩy hông ra sau, lưng trung lập." },
+      { name: "Đá đùi trước", sets: "3", reps: "10–15", rest: "75s", note: "Dùng bộ phận chân của ghế; không khóa gối mạnh." },
+      { name: "Cuốn đùi sau", sets: "3", reps: "10–15", rest: "75s", note: "Nằm sấp; kéo gót về mông có kiểm soát." },
+      { name: "Nâng bắp chân với đòn", sets: "4", reps: "12–20", rest: "60s", note: "Dừng một nhịp ở điểm cao, hạ sâu hết biên độ." },
     ],
   },
   {
@@ -76,8 +77,8 @@ const days: Day[] = [
     duration: "40–50 phút",
     exercises: [
       { name: "Đẩy vai", sets: "3", reps: "8–12", rest: "90s", note: "Không tập tới thất bại; vai trước đã làm việc ở buổi ngực." },
-      { name: "Nâng vai ngang", sets: "4", reps: "12–20", rest: "60s", note: "Tải nhẹ, không nhún người.", gear: "Tạ đơn điều chỉnh" },
-      { name: "Nâng vai ngang một tay với cáp", sets: "2", reps: "12–15", rest: "60s", note: "Có thể thay bài tạ đơn nếu máy bố trí thuận tiện." },
+      { name: "Nâng vai ngang một tay với cáp", sets: "4", reps: "12–15", rest: "60s", note: "Ròng rọc thấp; tải nhẹ, không nhún người." },
+      { name: "Nhún vai với đòn", sets: "3", reps: "10–15", rest: "60s", note: "Đòn trong khung; nâng vai thẳng lên, không xoay." },
       { name: "Gập bụng trên ghế", sets: "3", reps: "12–20", rest: "45s", note: "Thở ra khi cuộn thân." },
       { name: "Plank", sets: "3", reps: "30–60s", rest: "45s", note: "Siết mông, không võng lưng.", gear: "Thảm tập" },
     ],
@@ -91,10 +92,10 @@ const days: Day[] = [
     duration: "45–55 phút",
     exercises: [
       { name: "Kéo xô trước", sets: "3", reps: "10–15", rest: "90s", note: "Dùng tải nhẹ hơn thứ 3 khoảng 10–15%." },
-      { name: "Kéo lưng giữa", sets: "3", reps: "10–15", rest: "75s", note: "Nhịp chậm, tập trung cảm nhận lưng." },
+      { name: "Kéo lưng giữa", sets: "3", reps: "10–15", rest: "75s", note: "Ngồi ghế kéo ròng rọc thấp; nhịp chậm, cảm nhận lưng." },
       { name: "Kéo xô tay hẹp", sets: "2", reps: "12–15", rest: "75s", note: "Không ngả người quá nhiều." },
-      { name: "Cuốn tay trước với cáp", sets: "3", reps: "12–15", rest: "60s", note: "Dừng trước thất bại 2–3 lần lặp." },
-      { name: "Cuốn búa", sets: "2", reps: "12–15", rest: "60s", note: "Bổ sung cẳng tay và cơ cánh tay.", gear: "Tạ đơn điều chỉnh" },
+      { name: "Cuốn tay trước với cáp", sets: "3", reps: "12–15", rest: "60s", note: "Ngồi ghế, ròng rọc thấp; dừng trước thất bại 2–3 lần lặp.", gear: "Tay đòn ngắn" },
+      { name: "Cuốn búa với dây thừng cáp", sets: "2", reps: "12–15", rest: "60s", note: "Lòng bàn tay hướng vào nhau; bổ sung cẳng tay.", gear: "Dây thừng cáp" },
     ],
   },
   {
@@ -130,27 +131,27 @@ const days: Day[] = [
 const gear = [
   {
     rank: "01",
-    name: "Tạ đơn điều chỉnh",
+    name: "Dây thừng kéo cáp",
     verdict: "Nên mua",
-    why: "Bù đúng điểm yếu của giàn: Romanian deadlift, nâng vai ngang, cuốn búa và bài đơn bên.",
+    why: "Face pull, cuốn búa và duỗi tay sau qua đầu thoải mái hơn tay cầm thẳng; giá thấp, chiếm ít chỗ.",
   },
   {
     rank: "02",
-    name: "Dây thừng kéo cáp",
-    verdict: "Rất hữu ích",
-    why: "Tập face pull và tay sau thoải mái hơn tay cầm thẳng; giá thấp, chiếm ít chỗ.",
+    name: "Thảm tập",
+    verdict: "Nên có",
+    why: "Dùng cho plank, gập bụng và giãn cơ. Không cần loại quá dày.",
   },
   {
     rank: "03",
-    name: "Thảm tập",
-    verdict: "Nên có",
-    why: "Dùng cho plank, bài bụng và giãn cơ. Không cần loại quá dày.",
-  },
-  {
-    rank: "04",
     name: "Dây kháng lực",
     verdict: "Tùy chọn",
     why: "Hỗ trợ khởi động vai, mông và trợ lực xà đơn; không bắt buộc khi ngân sách hạn chế.",
+  },
+  {
+    rank: "04",
+    name: "Tạ đơn điều chỉnh",
+    verdict: "Tùy chọn",
+    why: "Không bắt buộc — lịch hiện dùng toàn bộ máy; mua sau nếu muốn thêm biến thể tạ rời.",
   },
 ];
 
@@ -321,8 +322,8 @@ export default function Home() {
           <p className="eyebrow">DỤNG CỤ BỔ SUNG</p>
           <h2>BK-1999 Pro làm được phần lớn. Đây là phần còn thiếu.</h2>
           <p>
-            Không cần mua cả phòng gym. Một đôi tạ đơn điều chỉnh giúp hoàn thiện chuỗi vận động hông,
-            vai giữa và các bài đơn bên mà giàn cáp khó thay thế.
+            Không cần mua cả phòng gym. Toàn bộ lịch tập chạy trên đòn, cáp và ghế của máy —
+            vài phụ kiện nhỏ dưới đây chỉ giúp tập thoải mái hơn.
           </p>
         </div>
         <div className="gear-list">
@@ -339,7 +340,7 @@ export default function Home() {
         </div>
         <div className="buy-line">
           <span>Nếu chỉ mua một món</span>
-          <strong>Tạ đơn điều chỉnh, tổng tải khoảng 20–30 kg là lựa chọn đầu tiên.</strong>
+          <strong>Dây thừng kéo cáp — rẻ, chiếm ít chỗ và dùng trong nhiều bài.</strong>
         </div>
       </section>
 
